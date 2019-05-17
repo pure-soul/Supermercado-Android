@@ -206,24 +206,4 @@ public class CartAdapter extends RecyclerView.Adapter<CartAdapter.ViewHolder> {
             return RESULTS;
         }
     }
-
-    private class FetchItemsTask extends AsyncTask<Void,Void,ArrayList<Item>> {
-
-        private String mQuery;
-
-        public FetchItemsTask(String query) {
-            mQuery = query;
-        }
-
-        @Override
-        protected ArrayList<Item> doInBackground(Void... params) {
-
-            return new ServerQuery().searchItem(mQuery);
-        }
-
-        @Override
-        protected void onPostExecute(ArrayList<Item> items) {
-            CartArrayList = items;
-        }
-    }
 }
