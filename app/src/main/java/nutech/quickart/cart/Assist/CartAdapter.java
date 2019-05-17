@@ -76,7 +76,6 @@ public class CartAdapter extends RecyclerView.Adapter<CartAdapter.ViewHolder> {
                 showPopupMenu(holder.options, position);
             }
         });
-
     }
 
     @Override
@@ -86,7 +85,6 @@ public class CartAdapter extends RecyclerView.Adapter<CartAdapter.ViewHolder> {
         }
         return CartArrayList.size();
     }
-
 
     private void showPopupMenu(View view, int position) {
         PopupMenu popup = new PopupMenu(context, view);
@@ -204,7 +202,6 @@ public class CartAdapter extends RecyclerView.Adapter<CartAdapter.ViewHolder> {
             super.onPostExecute(items);
             //CartArrayList = items;//fix
         }
-
         public ArrayList<Item> getRESULTS() {
             return RESULTS;
         }
