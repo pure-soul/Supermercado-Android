@@ -202,6 +202,7 @@ public class CartAdapter extends RecyclerView.Adapter<CartAdapter.ViewHolder> {
             super.onPostExecute(items);
             //CartArrayList = items;//fix
         }
+
         public ArrayList<Item> getRESULTS() {
             return RESULTS;
         }
