@@ -16,7 +16,6 @@ import android.view.View;
 import nutech.quickart.cart.Assist.CartAdapter;
 
 import java.util.ArrayList;
-import java.util.List;
 
 /**
  * An activity representing a list of Items. This activity
@@ -29,7 +28,6 @@ import java.util.List;
  */
 
 public class ItemListActivity extends AppCompatActivity {
-
 
     private CartAdapter cartAdapter;
     private ArrayList<Item> checkOut; // Was ArrayList

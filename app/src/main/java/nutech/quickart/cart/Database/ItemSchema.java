@@ -10,7 +10,9 @@ public class ItemSchema {
             public static final String ITEM = "item";
             public static final String COST = "cost";
             public static final String CONTENT = "content";
-            public static final String IMAGE = "image"; //might have to expand
+            public static final String IMAGE = "image";
+            public static final String QUANTITY = "quantity";
+            public static final String ISLE_NUM = "isle_number";//might have to expand
         }
     }
 }

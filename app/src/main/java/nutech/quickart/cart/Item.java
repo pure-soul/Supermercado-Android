@@ -4,11 +4,14 @@ import android.graphics.Bitmap;
 
 public class Item {
 
-    private String iID;
+    private int Quantity;
     private String iName;
+    private String iID;
     private String iContent;
     private float iCost;
     private Bitmap iBitImage;
+    private int iQuantity;
+    private int mIsleNum;
     private String iImageURL;// to replace bitmap
     private int image_drawable;
 
@@ -49,12 +52,14 @@ public class Item {
         iBitImage = image;
     }
 
-    public Item(String id, String name, String content, float cost, String image) {
+    public Item(String id, String name, String content, float cost, String image, int quan, int isle_num) {
         iID = id;
         iName = name;
         iContent = content;
         iCost = cost;
         iImageURL = image;
+        iQuantity = quan;
+        mIsleNum = isle_num;
     }
 
     public Item(String name, float cost, int drawable){

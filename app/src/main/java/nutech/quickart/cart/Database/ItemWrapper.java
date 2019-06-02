@@ -19,9 +19,11 @@ public class ItemWrapper extends CursorWrapper {
         String item_name = getString(getColumnIndex(ItemSchema.Item.Col.ITEM));
         String content = getString(getColumnIndex(ItemSchema.Item.Col.CONTENT));
         String cost = getString(getColumnIndex(ItemSchema.Item.Col.COST));
-        byte[] image  =  getBlob(getColumnIndex(ItemSchema.Item.Col.IMAGE));
+        String image  =  getString(getColumnIndex(ItemSchema.Item.Col.IMAGE));
+        String quantity  =  getString(getColumnIndex(ItemSchema.Item.Col.QUANTITY));
+        String isle_num  =  getString(getColumnIndex(ItemSchema.Item.Col.ISLE_NUM));
 
-        item = new Item(item_id, item_name, content, Float.parseFloat(cost),BitmapFactory.decodeByteArray(image, 0 ,image.length));
+        item = new Item(item_id, item_name, content, Float.parseFloat(cost), image,Integer.parseInt(quantity), Integer.parseInt(isle_num));
 
         return item;
     }
