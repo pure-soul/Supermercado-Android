@@ -1,1 +1,1 @@
-# Supermarket App Developed by Strange Energy (2019)
+# Supermarket Android App Developed by Strange Energy (2019)
